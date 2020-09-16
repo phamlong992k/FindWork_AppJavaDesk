@@ -1,0 +1,268 @@
+<!--
+	AIzaSyD9YUzlgt0dEOQVy-qAG9AU-Gxj2MjFuSU
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Geocoding Service</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<style>
+      /* Always set the map height explicitly to define the size of the div
+      * element that contains the map. */
+      #map {
+      	height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+      	height: 100%;
+      	margin: 0;
+      	padding: 0;
+      }
+      #floating-panel {
+      	position: absolute;
+      	top: 1.7%;
+      	left: 37%;
+      	z-index: 0;
+      	background-color: #fff;
+      	padding: 5px;
+      	border: 1px solid #999;
+      	text-align: center;
+      	font-family: 'Roboto','sans-serif';
+      	line-height: 30px;
+      	padding-left: 10px;
+      }
+      
+  </style>
+</head>
+<body>
+	<div id="map">
+	</div>
+	<div id="floating-panel" style = "display:none;">
+		<input id="address" type="textbox" size="11" placeholder=" Nơi Xuất Phát " readonly="true"  >
+		<input id="address2" type="textbox" size="11" placeholder=" Địa Điểm Đến " readonly="true" >
+		<input id="submit" type="button" value="Chấp Nhận" style="display:none;">
+		<input id="submit1" type="button" value="Chạy">
+		<input id="result" type="textbox" size="8" placeholder = "Khoảng Cách" readonly="true" >
+		<input id="remove" type="textbox" size="8" style = "display:none;">
+		<input id="add" type="textbox" size="8" style = "display:none;">
+	</div>	
+	<script>
+		//var markers = [{lat: 10.06, lng: 106.0}];
+		//var arrTmp = [{lat: 10.06, lng: 106.0},{lat:15,lng:107}];
+		var linkIcon = "F:\\Hoc\\FPT\\cn3\\DuThinhWEB\\FastJob_OK\\FastJob\\marker.png";
+		var count = 0;
+		var markers = [];
+		var phone = 1;
+		var arrRemove = [];
+		var arrMarkers = [];
+		var arrTmp = [];
+		var distances = [];
+		var markerPos;
+		var panorama;
+		var from;
+		var to;
+		function initMap() {
+			const directionsService = new google.maps.DirectionsService();
+       	    const directionsRenderer = new google.maps.DirectionsRenderer({
+       	    	suppressMarkers: true
+       	    });
+		     map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 8,
+				center: {lat: 15, lng: 108}
+			});
+		    directionsRenderer.setMap(map);
+		    var geocoder = new google.maps.Geocoder();
+		    document.getElementById("remove").addEventListener('click', function()
+		    	{
+		    		for(var i = 0 ; i < arrRemove.length ; i++)
+				    	{
+				    		var pos = arrRemove[i];
+				    		arrMarkers[pos].setMap(null);
+				    	}
+		    	});
+		   
+		    document.getElementById("add").addEventListener('click', function()
+		    	{
+		    		setMarker(map);
+		    	});
+		    const onChangeHandler = function() {
+		    	if(count == 1)
+					{service.getDistanceMatrix(
+					  {
+					    origins: arrTmp,
+					    destinations: markers,
+					    travelMode: 'DRIVING',
+					    unitSystem: google.maps.UnitSystem.METRIC,
+					    avoidHighways: false,
+					    avoidTolls: false,
+					  }, callback);
+						count = 0;
+						//setDistance(markerPos);
+					}
+	          else
+	          	calculateAndDisplayRoute(directionsService, directionsRenderer,from,to);
+	        };
+			panorama = map.getStreetView();
+			var service = new google.maps.DistanceMatrixService();
+          document.getElementById('submit1').addEventListener('click',onChangeHandler);
+			infoWindow = new google.maps.InfoWindow;
+			document.getElementById('submit').addEventListener('click', function() {
+				var address1 = document.getElementById('address').value;
+				var address2 = document.getElementById('address2').value;
+				geocodeAddress(geocoder, map,address1);
+			});
+			//google.maps.event.addListener(map, 'click', function(event) {
+				  //  alert(event.latLng);
+				 // }
+			var service = new google.maps.DistanceMatrixService();
+		}
+		function initSeft()
+		{
+			count = 1;
+			document.getElementById("submit").click();
+		}
+		function setMarker(map)
+		{
+			for(var i = 0 ; i < arrRemove.length ; i++)
+		    	{
+		    		var pos = arrRemove[i];
+		    		arrMarkers[pos].setMap(map);
+		    	}
+		}
+		function setArr()
+		{
+			arrTmp.push(from);
+		}
+		function callback(response, status) {
+		  if (status == 'OK') {
+		    var origins = response.originAddresses;
+		    var destinations = response.destinationAddresses;
+		    for (var i = 0; i < origins.length; i++) {
+		      var results = response.rows[i].elements;
+		      for (var j = 0; j < results.length; j++) {
+		        var element = results[j];
+		        var distance = element.distance.value;
+		        var duration = element.duration.text;
+		        var from1 = origins[i];
+		        var to1 = destinations[j];
+		        distances.push(distance);
+		      }
+		    }
+		  }
+		}
+		function setDistance2(distanceTmp)
+		{
+			
+			for( var i = 0 ; i < markers.length ; i++)
+			{
+				var variables = markers[i];
+				if(distanceTmp.equals(variables))
+				{
+					document.getElementById('result').value = distances[i] / 1000;
+					break;
+				}
+			}
+		}
+		function setDistance(distanceTmp)
+		{
+			var lat = distanceTmp.lat();
+			var lng = distanceTmp.lng();
+			for( var i = 0 ; i < markers.length ; i++)
+			{
+				var variables = markers[i];
+				var latTmp = variables.lat();
+				var lngTmp = variables.lng();
+
+				if(lat == latTmp && lng == lngTmp)
+				{
+					document.getElementById('result').value = distances[i];
+					break;
+				}
+			}
+		}
+		function streetViewPanorama()
+		{
+			 panorama.setPosition(markerPos);
+       		 panorama.setPov(
+	          {
+	            heading: 34,
+	            pitch: 10
+	          }
+	        );
+       		 panorama.setVisible(true);
+	       // var div = document.createElement('div');
+	       // div.id = "floating-panel";
+	       // div.innerHTML = "<input  type='button' value='Quay Lại'/>";
+	       // document.body.appendChild(div);
+		}
+		function calculateAndDisplayRoute(directionsService, directionsRenderer,corrdinate1,corrdinate2) {
+        directionsService.route(
+          {
+            origin: corrdinate1,
+            destination: corrdinate2,
+            travelMode: google.maps.TravelMode.DRIVING
+          },
+          (response, status) => {
+            if (status === "OK") {
+              directionsRenderer.setDirections(response);
+            } else {
+              window.alert("Directions request failed due to " + status);
+            }
+          }
+        );
+      }
+		function geocodeAddress(geocoder, resultsMap,address) {
+			var inforcontent = document.createElement('div');
+			var strong = document.createElement('strong');
+			strong.textContent = phone;
+			inforcontent.appendChild(strong);
+			inforcontent.appendChild(document.createElement('br'));
+			var text = document.createElement('text');
+            text.textContent = address;
+            inforcontent.appendChild(text);
+            inforcontent.appendChild(document.createElement('br'));
+            inforcontent.innerHTML += "<input type='button' value='Xem View Phố' onclick='streetViewPanorama();' />";
+			geocoder.geocode({'address': address}, function(results, status) {
+				if (status === 'OK') {
+					var marker;
+					if(count != 0)
+					{
+						resultsMap.setCenter(results[0].geometry.location);
+					    marker = new google.maps.Marker({
+						map: resultsMap,
+						position: results[0].geometry.location,
+						icon: linkIcon
+						});
+						from = marker.getPosition();	
+						arrTmp.push(from);
+					}
+					else
+					{
+						marker = new google.maps.Marker({
+						map: resultsMap,
+						position: results[0].geometry.location,
+						});
+						markers.push(marker.getPosition());
+					}
+					arrMarkers.push(marker);
+					marker.addListener('click', function(){
+						document.getElementById("address2").value = address;
+						markerPos = marker.getPosition();
+						setDistance2(markerPos);
+						to = markerPos;
+						infoWindow.setContent(inforcontent);
+						infoWindow.open(map,marker);
+					})
+				} else {
+					alert('Không tìm thấy: ' + status);
+				}
+			});
+		}
+
+	</script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9YUzlgt0dEOQVy-qAG9AU-Gxj2MjFuSU&callback=initMap">
+</script>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1110, 825]"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,3,55,0,0,4,83"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+    <Property name="useNullLayout" type="boolean" value="false"/>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+            <BevelBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="1" y="3" width="1110" height="825"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="false"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="60" style="2"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="99" red="ff" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="T&#xec;m vi&#x1ec7;c"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="0" y="0" width="1110" height="140"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="C&#xf4;ng Vi&#x1ec7;c"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="20" y="260" width="-1" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="cbxJob">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="16" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="122">
+                <StringItem index="0" value="None"/>
+                <StringItem index="1" value="Ng&#xe0;nh c&#xf4;ng ngh&#x1ec7; th&#x1ef1;c ph&#x1ea9;m"/>
+                <StringItem index="2" value="Ng&#xe0;nh c&#xf4;ng ngh&#x1ec7; ch&#x1ebf; bi&#x1ebf;n sau thu ho&#x1ea1;ch"/>
+                <StringItem index="3" value="C&#xf4;ng ngh&#x1ec7; ch&#x1ebf; bi&#x1ebf;n th&#x1ee7;y s&#x1ea3;n"/>
+                <StringItem index="4" value="Ng&#xe0;nh k&#x1ef9; thu&#x1ead;t d&#x1ec7;t"/>
+                <StringItem index="5" value="C&#xf4;ng ngh&#x1ec7; s&#x1ee3;i d&#x1ec7;t"/>
+                <StringItem index="6" value="Ng&#xe0;nh c&#xf4;ng ngh&#x1ec7; may h&#x1ecd;c g&#xec; v&#xe0; l&#xe0;m g&#xec;?"/>
+                <StringItem index="7" value="C&#xf4;ng ngh&#x1ec7; da gi&#x1ea7;y"/>
+                <StringItem index="8" value="C&#xf4;ng ngh&#x1ec7; ch&#x1ebf; bi&#x1ebf;n l&#xe2;m s&#x1ea3;n"/>
+                <StringItem index="9" value="Ng&#xe0;nh ki&#x1ebf;n tr&#xfa;c"/>
+                <StringItem index="10" value="Ng&#xe0;nh kinh t&#x1ebf; v&#xe0; qu&#x1ea3;n l&#xfd; &#x111;&#xf4; th&#x1ecb;"/>
+                <StringItem index="11" value="K&#x1ef9; thu&#x1ead;t c&#xf4;ng tr&#xec;nh bi&#x1ec3;n"/>
+                <StringItem index="12" value="Ng&#xe0;nh k&#x1ef9; thu&#x1ead;t x&#xe2;y d&#x1ef1;ng"/>
+                <StringItem index="13" value="Ng&#xe0;nh kinh t&#x1ebf; x&#xe2;y d&#x1ef1;ng"/>
+                <StringItem index="14" value="Ng&#xe0;nh qu&#x1ea3;n l&#xfd; x&#xe2;y d&#x1ef1;ng"/>
+                <StringItem index="15" value="K&#x1ef9; thu&#x1ead;t x&#xe2;y d&#x1ef1;ng c&#xf4;ng tr&#xec;nh giao th&#xf4;ng"/>
+                <StringItem index="16" value="C&#xf4;ng ngh&#x1ec7; k&#x1ef9; thu&#x1ead;t c&#xf4;ng tr&#xec;nh x&#xe2;y d&#x1ef1;ng"/>
+                <StringItem index="17" value="Ng&#xe0;nh qu&#x1ea3;n tr&#x1ecb; kinh doanh"/>
+                <StringItem index="18" value="Ng&#xe0;nh qu&#x1ea3;n tr&#x1ecb; d&#x1ecb;ch v&#x1ee5; du l&#x1ecb;ch v&#xe0; l&#x1eef; h&#xe0;nh"/>
+                <StringItem index="19" value="Ng&#xe0;nh qu&#x1ea3;n tr&#x1ecb; kh&#xe1;ch s&#x1ea1;n"/>
+                <StringItem index="20" value="Ng&#xe0;nh Marketing"/>
+                <StringItem index="21" value="Ng&#xe0;nh ngh&#x1ec1; m&#xf4;i gi&#x1edb;i b&#x1ea5;t &#x111;&#x1ed9;ng s&#x1ea3;n"/>
+                <StringItem index="22" value="Ng&#xe0;nh kinh doanh qu&#x1ed1;c t&#x1ebf;"/>
+                <StringItem index="23" value="Ng&#xe0;nh k&#x1ebf; to&#xe1;n"/>
+                <StringItem index="24" value="Ng&#xe0;nh ki&#x1ec3;m to&#xe1;n"/>
+                <StringItem index="25" value="Ng&#xe0;nh qu&#x1ea3;n tr&#x1ecb; nh&#xe2;n l&#x1ef1;c"/>
+                <StringItem index="26" value="Ng&#xe0;nh h&#x1ec7; th&#x1ed1;ng th&#xf4;ng tin qu&#x1ea3;n l&#xfd;"/>
+                <StringItem index="27" value="Ng&#xe0;nh qu&#x1ea3;n tr&#x1ecb; v&#x103;n ph&#xf2;ng"/>
+                <StringItem index="28" value="Ng&#xe0;nh khoa h&#x1ecd;c - m&#xe1;y t&#xed;nh"/>
+                <StringItem index="29" value="Ng&#xe0;nh truy&#x1ec1;n th&#xf4;ng &#x111;a ph&#x1b0;&#x1a1;ng ti&#x1ec7;n"/>
+                <StringItem index="30" value="Ng&#xe0;nh k&#x1ef9; thu&#x1ead;t ph&#x1ea7;n m&#x1ec1;m"/>
+                <StringItem index="31" value="Ng&#xe0;nh c&#xf4;ng ngh&#x1ec7; th&#xf4;ng tin"/>
+                <StringItem index="32" value="Lu&#x1ead;t kinh t&#x1ebf;"/>
+                <StringItem index="33" value="Lu&#x1ead;t qu&#x1ed1;c t&#x1ebf;"/>
+                <StringItem index="34" value="Ng&#xe0;nh vi&#x1ec7;t nam h&#x1ecd;c"/>
+                <StringItem index="35" value="Ng&#xe0;nh ng&#xf4;n ng&#x1eef; Anh &#x2013; Ti&#x1ebf;ng Anh"/>
+                <StringItem index="36" value="Ng&#xe0;nh ng&#xf4;n ng&#x1eef; Nga &#x2013; Ti&#x1ebf;ng Nga"/>
+                <StringItem index="37" value="Ng&#xe0;nh ng&#xf4;n ng&#x1eef; Ph&#xe1;p &#x2013; Ti&#x1ebf;ng Ph&#xe1;p"/>
+                <StringItem index="38" value="Ng&#xe0;nh ng&#xf4;n ng&#x1eef; Trung &#x2013; Ti&#x1ebf;ng Trung"/>
+                <StringItem index="39" value="Ng&#xe0;nh ng&#xf4;n ng&#x1eef; &#x110;&#x1ee9;c &#x2013; Ti&#x1ebf;ng &#x110;&#x1ee9;c"/>
+                <StringItem index="40" value="Ng&#xe0;nh ng&#xf4;n ng&#x1eef; T&#xe2;y Ban Nha &#x2013; Ti&#x1ebf;ng T&#xe2;y Ban Nha"/>
+                <StringItem index="41" value="Ng&#xe0;nh ng&#xf4;n ng&#x1eef; B&#x1ed3; &#x110;&#xe0;o Nha &#x2013; B&#x1ed3; &#x110;&#xe0;o Nha"/>
+                <StringItem index="42" value="Ng&#xe0;nh ng&#xf4;n ng&#x1eef; Italya &#x2013; Ti&#x1ebf;ng Italya"/>
+                <StringItem index="43" value="Ng&#xe0;nh ng&#xf4;n ng&#x1eef; Nh&#x1ead;t &#x2013; Ti&#x1ebf;ng Nh&#x1ead;t"/>
+                <StringItem index="44" value="Ng&#xe0;nh ng&#xf4;n ng&#x1eef; H&#xe0;n Qu&#x1ed1;c &#x2013; Ti&#x1ebf;ng H&#xe0;n Qu&#x1ed1;c"/>
+                <StringItem index="45" value="Ng&#xe0;nh ng&#xf4;n ng&#x1eef; A r&#x1ead;p &#x2013; Ti&#x1ebf;ng &#x1ea2; r&#x1ead;p"/>
+                <StringItem index="46" value="Ng&#xe0;nh ng&#xf4;n ng&#x1eef; Qu&#x1ed1;c T&#x1ebf; H&#x1ecd;c"/>
+                <StringItem index="47" value="Ng&#xe0;nh &#x110;&#xf4;ng Ph&#x1b0;&#x1a1;ng H&#x1ecd;c"/>
+                <StringItem index="48" value="Ng&#xe0;nh &#x110;&#xf4;ng Nam &#xc1; h&#x1ecd;c"/>
+                <StringItem index="49" value="Ng&#xe0;nh Trung Qu&#x1ed1;c h&#x1ecd;c"/>
+                <StringItem index="50" value="Ng&#xe0;nh Nh&#x1ead;t B&#x1ea3;n h&#x1ecd;c"/>
+                <StringItem index="51" value="Ng&#xe0;nh H&#xe0;n Qu&#x1ed1;c h&#x1ecd;c"/>
+                <StringItem index="52" value="Ng&#xe0;nh khu v&#x1ef1;c Th&#xe1;i B&#xec;nh D&#x1b0;&#x1a1;ng h&#x1ecd;c"/>
+                <StringItem index="53" value="Ng&#xe0;nh tri&#x1ebf;t h&#x1ecd;c"/>
+                <StringItem index="54" value="Ng&#xe0;nh l&#x1ecb;ch s&#x1eed; h&#x1ecd;c"/>
+                <StringItem index="55" value="Ng&#xe0;nh v&#x103;n h&#x1ecd;c"/>
+                <StringItem index="56" value="Ng&#xe0;nh v&#x103;n h&#xf3;a h&#x1ecd;c"/>
+                <StringItem index="57" value="Ng&#xe0;nh qu&#x1ea3;n l&#xfd; v&#x103;n h&#xf3;a"/>
+                <StringItem index="58" value="Ng&#xe0;nh qu&#x1ea3;n l&#xfd; th&#x1ec3; d&#x1ee5;c th&#x1ec3; thao"/>
+                <StringItem index="59" value="Ng&#xe0;nh h&#x1ed9;i h&#x1ecd;a"/>
+                <StringItem index="60" value="Ng&#xe0;nh &#x111;&#x1ed3; h&#x1ecd;a"/>
+                <StringItem index="61" value="Ng&#xe0;nh &#x111;i&#xea;u kh&#x1eaf;c"/>
+                <StringItem index="62" value="Ng&#xe0;nh g&#x1ed1;m"/>
+                <StringItem index="63" value="Ng&#xe0;nh thi&#x1ebf;t k&#x1ebf; c&#xf4;ng nghi&#x1ec7;p"/>
+                <StringItem index="64" value="Ng&#xe0;nh thi&#x1ebf;t k&#x1ebf; &#x111;&#x1ed3; h&#x1ecd;a"/>
+                <StringItem index="65" value="Ng&#xe0;nh thi&#x1ebf;t k&#x1ebf; th&#x1edd;i trang"/>
+                <StringItem index="66" value="Ng&#xe0;nh thi&#x1ebf;t k&#x1ebf; n&#x1ed9;i th&#x1ea5;t"/>
+                <StringItem index="67" value="Ng&#xe0;nh kinh t&#x1ebf;"/>
+                <StringItem index="68" value="Ng&#xe0;nh kinh t&#x1ebf; qu&#x1ed1;c t&#x1ebf;"/>
+                <StringItem index="69" value="Ng&#xe0;nh ch&#xed;nh tr&#x1ecb; h&#x1ecd;c"/>
+                <StringItem index="70" value="Ng&#xe0;nh x&#xe2;y d&#x1ef1;ng &#x111;&#x1ea3;ng ch&#x1ec9;nh quy&#x1ec1;n v&#xe0; nh&#xe0; n&#x1b0;&#x1edb;c"/>
+                <StringItem index="71" value="Ng&#xe0;nh qu&#x1ea3;n l&#xfd; nh&#xe0; n&#x1b0;&#x1edb;c"/>
+                <StringItem index="72" value="Ng&#xe0;nh quan h&#x1ec7; qu&#x1ed1;c t&#x1ebf;"/>
+                <StringItem index="73" value="Ng&#xe0;nh x&#xe3; h&#x1ed9;i h&#x1ecd;c"/>
+                <StringItem index="74" value="Ng&#xe0;nh nh&#xe2;n v&#x103;n"/>
+                <StringItem index="75" value="Ng&#xe0;nh t&#xe2;m l&#xfd; h&#x1ecd;c"/>
+                <StringItem index="76" value="Ng&#xe0;nh b&#xe1;o ch&#xed;"/>
+                <StringItem index="77" value="Ng&#xe0;nh truy&#x1ec1;n th&#xf4;ng &#x111;a ph&#x1b0;&#x1a1;ng ti&#x1ec7;n"/>
+                <StringItem index="78" value="Ng&#xe0;nh c&#xf4;ng ngh&#x1ec7; truy&#x1ec1;n th&#xf4;ng"/>
+                <StringItem index="79" value="Ng&#xe0;nh quan h&#x1ec7; c&#xf4;ng ch&#xfa;ng"/>
+                <StringItem index="80" value="Ng&#xe0;nh th&#xf4;ng tin h&#x1ecd;c"/>
+                <StringItem index="81" value="Ng&#xe0;nh khoa h&#x1ecd;c th&#x1b0; vi&#x1ec7;n"/>
+                <StringItem index="82" value="Ng&#xe0;nh l&#x1b0;u tr&#x1eef; h&#x1ecd;c"/>
+                <StringItem index="83" value="Ng&#xe0;nh b&#x1ea3;o t&#xe0;ng h&#x1ecd;c"/>
+                <StringItem index="84" value="Ng&#xe0;nh xu&#x1ea5;t b&#x1ea3;n"/>
+                <StringItem index="85" value="Ng&#xe0;nh kinh doanh xu&#x1ea5;t b&#x1ea3;n ph&#x1ea9;m"/>
+                <StringItem index="86" value="Ng&#xe0;nh c&#xf4;ng ngh&#x1ec7; sinh h&#x1ecd;c"/>
+                <StringItem index="87" value="Ng&#xe0;nh sinh h&#x1ecd;c"/>
+                <StringItem index="88" value="Ng&#xe0;nh k&#x1ef9; thu&#x1ead;t sinh h&#x1ecd;c"/>
+                <StringItem index="89" value="Ng&#xe0;nh sinh h&#x1ecd;c &#x1ee9;ng d&#x1ee5;ng"/>
+                <StringItem index="90" value="Ng&#xe0;nh thi&#xea;n v&#x103;n h&#x1ecd;c"/>
+                <StringItem index="91" value="Ng&#xe0;nh v&#x1ead;t l&#xfd; h&#x1ecd;c"/>
+                <StringItem index="92" value="Ng&#xe0;nh h&#xf3;a h&#x1ecd;c"/>
+                <StringItem index="93" value="Ng&#xe0;nh khoa h&#x1ecd;c v&#x1ead;t li&#x1ec7;u"/>
+                <StringItem index="94" value="Ng&#xe0;nh &#x111;&#x1ecb;a ch&#x1ea5;t h&#x1ecd;c"/>
+                <StringItem index="95" value="Ng&#xe0;nh &#x111;&#x1ecb;a l&#xfd; t&#x1ef1; nhi&#xea;n"/>
+                <StringItem index="96" value="Ng&#xe0;nh kh&#xed; t&#x1b0;&#x1ee3;ng h&#x1ecd;c"/>
+                <StringItem index="97" value="Ng&#xe0;nh th&#x1ee7;y v&#x103;n h&#x1ecd;c"/>
+                <StringItem index="98" value="Ng&#xe0;nh h&#x1ea3;i d&#x1b0;&#x1a1;ng h&#x1ecd;c"/>
+                <StringItem index="99" value="Ng&#xe0;nh khoa h&#x1ecd;c m&#xf4;i tr&#x1b0;&#x1edd;ng"/>
+                <StringItem index="100" value="Ng&#xe0;nh khoa h&#x1ecd;c &#x111;&#x1ea5;t"/>
+                <StringItem index="101" value="Ng&#xe0;nh to&#xe1;n h&#x1ecd;c"/>
+                <StringItem index="102" value="Ng&#xe0;nh to&#xe1;n &#x1ee9;ng d&#x1ee5;ng"/>
+                <StringItem index="103" value="Ng&#xe0;nh th&#x1ed1;ng k&#xea;"/>
+                <StringItem index="104" value="Ng&#xe0;nh qu&#x1ea3;n l&#xfd; gi&#xe1;o d&#x1ee5;c"/>
+                <StringItem index="105" value="Ng&#xe0;nh gi&#xe1;o d&#x1ee5;c h&#x1ecd;c"/>
+                <StringItem index="106" value="Ng&#xe0;nh s&#x1b0; ph&#x1ea1;m m&#x1ea7;m non"/>
+                <StringItem index="107" value="Ng&#xe0;nh gi&#xe1;o d&#x1ee5;c ti&#x1ec3;u h&#x1ecd;c"/>
+                <StringItem index="108" value="Ng&#xe0;nh gi&#xe1;o d&#x1ee5;c &#x111;&#x1eb7;c bi&#x1ec7;t"/>
+                <StringItem index="109" value="Ng&#xe0;nh gi&#xe1;o d&#x1ee5;c c&#xf4;ng d&#xe2;n"/>
+                <StringItem index="110" value="Ng&#xe0;nh gi&#xe1;o d&#x1ee5;c ch&#xed;nh tr&#x1ecb;"/>
+                <StringItem index="111" value="Ng&#xe0;nh gi&#xe1;o d&#x1ee5;c th&#x1ec3; ch&#x1ea5;t"/>
+                <StringItem index="112" value="Ng&#xe0;nh hu&#x1ea5;n luy&#x1ec7;n th&#x1ec3; thao"/>
+                <StringItem index="113" value="Ng&#xe0;nh gi&#xe1;o d&#x1ee5;c qu&#x1ed1;c ph&#xf2;ng &#x2013; an ninh"/>
+                <StringItem index="114" value="Ng&#xe0;nh s&#x1b0; ph&#x1ea1;m to&#xe1;n h&#x1ecd;c"/>
+                <StringItem index="115" value="Ng&#xe0;nh s&#x1b0; ph&#x1ea1;m tin h&#x1ecd;c"/>
+                <StringItem index="116" value="Ng&#xe0;nh s&#x1b0; ph&#x1ea1;m v&#x1ead;t l&#xfd;"/>
+                <StringItem index="117" value="Ng&#xe0;nh s&#x1b0; ph&#x1ea1;m h&#xf3;a h&#x1ecd;c"/>
+                <StringItem index="118" value="Ng&#xe0;nh s&#x1b0; ph&#x1ea1;m sinh h&#x1ecd;c"/>
+                <StringItem index="119" value="Ng&#xe0;nh s&#x1b0; ph&#x1ea1;m k&#x1ef9; thu&#x1ead;t c&#xf4;ng nghi&#x1ec7;p"/>
+                <StringItem index="120" value="Ng&#xe0;nh s&#x1b0; ph&#x1ea1;m k&#x1ef9; thu&#x1ead;t n&#xf4;ng nghi&#x1ec7;p"/>
+                <StringItem index="121" value="Ng&#xe0;nh s&#x1b0; ph&#x1ea1;m kinh t&#x1ebf; gia &#x111;&#xec;nh"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="cbxJobItemStateChanged"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="130" y="260" width="230" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnNearJob">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="T&#xec;m Vi&#x1ec7;c L&#xe0;m "/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNearJobActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="50" y="340" width="258" height="60"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnAroundJob">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="T&#xec;m Vi&#x1ec7;c Quanh &#x110;&#xe2;y"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAroundJobActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="50" y="450" width="258" height="60"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnRecomJob">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Vi&#x1ec7;c L&#xe0;m &#x110;&#x1ec1; Xu&#x1ea5;t"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRecomJobActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="50" y="570" width="258" height="60"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnCreatCV">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="T&#x1ea1;o CV Online"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCreatCVActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="50" y="690" width="258" height="60"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Container class="javax.swing.JPanel" name="map_panel">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="390" y="190" width="700" height="590"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+        </Container>
+        <Component class="javax.swing.JComboBox" name="cbxAddress">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="16" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="64">
+                <StringItem index="0" value="None"/>
+                <StringItem index="1" value="An Giang"/>
+                <StringItem index="2" value="B&#xe0; R&#x1ecb;a&#x2013;V&#x169;ng T&#xe0;u"/>
+                <StringItem index="3" value="B&#x1eaf;c Giang"/>
+                <StringItem index="4" value="B&#x1eaf;c K&#x1ea1;n"/>
+                <StringItem index="5" value="B&#x1ea1;c Li&#xea;u"/>
+                <StringItem index="6" value="B&#x1eaf;c Nin"/>
+                <StringItem index="7" value="B&#x1ebf;n Tre"/>
+                <StringItem index="8" value="B&#xec;nh &#xd0;&#x1ecb;nh"/>
+                <StringItem index="9" value="B&#xec;nh D&#x1b0;&#x1a1;ng"/>
+                <StringItem index="10" value="B&#xec;nh Ph&#x1b0;&#x1edb;cc"/>
+                <StringItem index="11" value="B&#xec;nh Thu&#x1ead;n"/>
+                <StringItem index="12" value="C&#xe0; Mau"/>
+                <StringItem index="13" value="C&#x1ea7;n Th&#x1a1;"/>
+                <StringItem index="14" value="Cao B&#x1eb1;ng"/>
+                <StringItem index="15" value="&#xd0;&#xe0; N&#x1eb5;ng"/>
+                <StringItem index="16" value="&#xd0;&#x1eaf;k L&#x1eaf;k"/>
+                <StringItem index="17" value="&#xd0;&#x1eaf;k N&#xf4;ng"/>
+                <StringItem index="18" value="&#xd0;i&#x1ec7;n Bi&#xea;n"/>
+                <StringItem index="19" value="&#xd0;&#x1ed3;ng Nai"/>
+                <StringItem index="20" value="&#xd0;&#x1ed3;ng Th&#xe1;p"/>
+                <StringItem index="21" value="Gia Lai"/>
+                <StringItem index="22" value="H&#xe0; Giang"/>
+                <StringItem index="23" value="H&#xe0; Nam"/>
+                <StringItem index="24" value="H&#xe0; N&#x1ed9;i"/>
+                <StringItem index="25" value="H&#xe0; T&#x129;nh"/>
+                <StringItem index="26" value="H&#x1ea3;i Duong"/>
+                <StringItem index="27" value="H&#x1ea3;i Ph&#xf2;ng"/>
+                <StringItem index="28" value="H&#x1ead;u Giang"/>
+                <StringItem index="29" value="TP.H&#x1ed3; Ch&#xed; Minh"/>
+                <StringItem index="30" value="H&#xf2;a B&#xec;nh"/>
+                <StringItem index="31" value="H&#x1b0;ng Y&#xea;n"/>
+                <StringItem index="32" value="Kh&#xe1;nh H&#xf2;a"/>
+                <StringItem index="33" value="Ki&#xea;n Giang"/>
+                <StringItem index="34" value="Kon Tum"/>
+                <StringItem index="35" value="Lai Ch&#xe2;u"/>
+                <StringItem index="36" value="L&#xe2;m &#xd0;&#x1ed3;ng"/>
+                <StringItem index="37" value="L&#x1ea1;ng Son"/>
+                <StringItem index="38" value="L&#xe0;o Cai"/>
+                <StringItem index="39" value="Long An"/>
+                <StringItem index="40" value="Nam &#xd0;&#x1ecb;nh"/>
+                <StringItem index="41" value="Ngh&#x1ec7; An"/>
+                <StringItem index="42" value="Ninh B&#xec;nh"/>
+                <StringItem index="43" value="Ninh Thu&#x1ead;n"/>
+                <StringItem index="44" value="Ph&#xfa; Th&#x1ecd;"/>
+                <StringItem index="45" value="Ph&#xfa; Y&#xea;n"/>
+                <StringItem index="46" value="Qu&#x1ea3;ng B&#xec;nh"/>
+                <StringItem index="47" value="Qu&#x1ea3;ng Nam"/>
+                <StringItem index="48" value="Qu&#x1ea3;ng Ng&#xe3;i"/>
+                <StringItem index="49" value="Qu&#x1ea3;ng Ninh"/>
+                <StringItem index="50" value="Qu&#x1ea3;ng Tr&#x1ecb;"/>
+                <StringItem index="51" value="S&#xf3;c Tr&#x103;ng"/>
+                <StringItem index="52" value="S&#x1a1;n La"/>
+                <StringItem index="53" value="T&#xe2;y Ninh"/>
+                <StringItem index="54" value="Th&#xe1;i B&#xec;nh"/>
+                <StringItem index="55" value="Th&#xe1;i Nguy&#xea;n"/>
+                <StringItem index="56" value="Thanh H&#xf3;a"/>
+                <StringItem index="57" value="Th&#x1eeb;a Thi&#xea;n&#x2013;Hu&#x1ebf;"/>
+                <StringItem index="58" value="Ti&#x1ec1;n Giang"/>
+                <StringItem index="59" value="Tr&#xe0; Vinh"/>
+                <StringItem index="60" value="Tuy&#xea;n Quang"/>
+                <StringItem index="61" value="Vinh Long"/>
+                <StringItem index="62" value="Vinh Ph&#xfa;c"/>
+                <StringItem index="63" value="Y&#xea;n B&#xe1;i"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="cbxAddressItemStateChanged"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbxAddressActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="130" y="200" width="230" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="T&#x1ec9;nh:"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="20" y="200" width="70" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="MapLabel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="0" y="0" width="1110" height="825"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
